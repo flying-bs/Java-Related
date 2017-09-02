@@ -1,0 +1,2 @@
+1.url模板映射：将jsp中的请求参数映射到requestMapping的对应路径{}中，利用pathvariable注解映射到方法里面的参数ID；利用servlet拦截请求目录的功能，实现无扩展名真正的restful风格架构。
+2.页面缓存使用oscache，缓存数据结构：map,key存储的是浏览器url，url不一致，value缓存页面的数据，缓存肯定变化；存储的范围默认在application域中；
