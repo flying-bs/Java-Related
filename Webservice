@@ -1,2 +1,20 @@
 # Java-Related
 from Three of University to now
+1.webservice是一种远程调用技术（系统和系统之间的调用，从远程系统当中获取业务数据）的实现，从远程系统中获取业务数据。（本地调用-在系统内部调用，在本地数据库获取业务数据）。
+2.远程调用：1.请求：(通讯方式：http（超文本传输协议）请求--post ,数据解析：遵循soap协议的xml进行封装数据)2.响应（通s讯方式：http响应，数据解析：遵循soap协议的xml进行封装数据）
+3.WSDL是webservice服务端的一个使用说明书，描述接口/方法/参数/返回值。UDDI:提供webservice服务端的注册和搜索功能（开发时一般知道是哪个服务端，故不需要UDDI--通用描述、发现与集成服务）；
+4.1 综合来讲，1.webservice是使用http发送soap协议的数据的一种远程技术；2.webservice需要开发服务端和客户端；3.webservice客户端开发需要阅读服务端的使用说明书（wsdl）。
+4.2web service的开发规范：JAX-WS---应用比较普遍（JAX-RPC--被前者取代）、JAXM&SAAJ、JAX-RS（大公司比较流行）。
+5.服务端开发步骤：1.创建SEI接口2.创建SEI实现类（利用@webservice表示服务类，发布public的方法）
+    3.发布服务（EndPoint发布服务，publish方法，两个参数：1.address 2.SEI实现类）4.测试发布是否成功（通过阅读使用说明书，确定客户端调用的接口/方法/参数/返回值存在，证明发布服务成功；wsdl地址=服务地址+？wsdl，wsdl阅读方式：从下往上）
+6.客户端开发步骤：1.在dos命令下使用wsimport工具的命令生成客户端代码  2.根据使用说明书，使用客户端代码调用服务端。
+7.web service的优缺点：1.跨防火墙（防火墙默认不拦截80端口）2，web service支持面向对象3.xml封装技术，它可跨平台，因此web service也是跨平台的。
+   缺点：xml封装格式数据，soap协议不断完善，标签越来越多，导致性能下降。
+8.软件集成：通过远程调用技术，将两个系统整合在一起；软件复用：同一款软件的多次集成。
+9.soap=http(跨防火墙)+xml（跨平台）;
+10.CXF：Apache CXF ,是一个开源的web service框架，可以实现快速开发；支持的协议：soap1.1/1.2，rest；支持的数据格式：xml，json（仅在rest方式下支持）
+11.rest是一种编程风格，可以精确地定位网上资源（服务接口，方法，参数）；它支持的数据格式：xml，JSON；支持的发送方式：get/post
+12.路径映射：/.../*;扩展映射：如*.action
+13.WSDL，UDDI和SOAP是SOA基础的基础部件 ；Web服务是技术规范，而SOA是设计原则；
+SOA是一种架构模式，而Web服务是利用一组标准实现的服务。Web服务是实现SOA的方式之一。
+ 
