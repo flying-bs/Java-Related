@@ -7,7 +7,7 @@ java环境变量的配置：
 oracle中涉及的注意项：
 1.数据库中的表tab（tablename）相当于一个数据字典。
 2.字符大小写，日期格式敏感；
-3.null值：（1）包含null的表达式都为null
+3.null值：（1）包含null的表达式都为null,
 （2） null永远!=null
 （3）如果集合中含有null，查询中不能使用not in,但可以使用in；
 （4）null值排序：oracle中，null值最大
