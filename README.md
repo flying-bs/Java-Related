@@ -1,4 +1,4 @@
 # Java-Related
 from Three of University to now
-[Oracle](Oracle.md)
+[Oracle](oracle.md)
 
