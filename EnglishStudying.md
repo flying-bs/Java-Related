@@ -29,4 +29,4 @@ hash table，不允许键和值为空，支持线程同步（线程安全），�
 
 需要实施精确到目录级别的权限控制，那么 svn 还是有不可替代的优势;
 
-github 账号：flying-bs/qqpassword/邮箱：企业邮箱
+github 账号：flying-bs/qqpassword/邮箱：企业邮箱。
