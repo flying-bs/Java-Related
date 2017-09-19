@@ -1,0 +1,12 @@
+1.部署好web项目运行时出现：jsp异常：org.apache.jasper.JasperException: java.lang.ClassCastException三种解决方法 
+ 解决方法一：
+     修改了tomcat里的context.xml文件，在context?元素下添加??<Loader?delegate="true"/>(推荐delegate --授权)
+ 解决方法二：
+     经过多次尝试，发现是由于项目中用到的servlet-api.jar包，不是tomcat提供的版本，换成tomcat提供的servlet-api.jar后问题就解决了。
+ 解决方法三：
+    把发布在tomcat下的项目工程lib目录下同tomcat?lib目录下重复的jar包删除。
+
+2.在springmvc中，访问具有rest风格的路径时，必须加上/rest才能访问。
+3.在部署项目时，保持编译JDK和build中的JRE版本一致。
+4.出现未找到访问页面：一般是jsp路径地址有问题
+5.引入静态文件不能放在WEB-INF下，比如jquery，这样浏览器请求不到。你放在外面就可以了。
