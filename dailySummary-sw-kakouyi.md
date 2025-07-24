@@ -297,6 +297,7 @@ flowchart TD
 	process on Url: https://www.processon.com/diagraming/65b98667d40f6010366e3a5d
 	navicat安装后下载补丁即可无限期使用,获取补丁地址(需关注公众号获取下载码)：https://task.csdn.net/
 	typora1.9.5版本激活教程: https://blog.csdn.net/2302_81286569/article/details/144246649
+	原型页面制作网址：https://mastergo.com/
 	
 	//-----------------------------------AI-----------------------------------//
 	AI大模型魔塔社区：https://www.modelscope.cn/papers
